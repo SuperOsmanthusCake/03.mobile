@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>立体导航</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            width: 450px;
+            height: 100px;
+            margin: 50px auto;
+        }
+        .box ul{
+            position: relative;
+            list-style: none;
+            float: left;
+            margin-right: 20px;
+            width: 50px;
+            height: 20px;
+            transition: all 2s;
+            transform-style: preserve-3d;
+            perspective: 1000px;
+        }
+        .box ul li a{
+            text-decoration: none;
+            color: #000;
+        }
+        .box ul li{
+            display: block;
+            width: 50px;
+            height: 20px;
+
+        }
+        .box .qian{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #0077aa;
+            transform: translateZ(10px);
+        }
+        .box .hou{
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: #df5000;
+            transform: rotateX(90deg) translateZ(10px);
+        }
+        .box ul:hover{
+            transform: rotate3d(1,0,0,-90deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <ul>
+            <li class="qian"><a href="#">首页</a></li>
+            <li class="hou"><a href="#">page</a></li>
+        </ul>
+        <ul>
+            <li class="qian"><a href="#">首页</a></li>
+            <li class="hou"><a href="#">page</a></li>
+        </ul>
+        <ul>
+            <li class="qian"><a href="#">首页</a></li>
+            <li class="hou"><a href="#">page</a></li>
+        </ul>
+    </div>
+</body>
+</html>

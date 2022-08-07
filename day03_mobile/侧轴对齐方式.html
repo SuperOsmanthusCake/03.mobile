@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            /* 视觉效果：子级一行排列/水平排列 */
+            /* 水平排列：默认主轴在水平，弹性盒子在主轴排列 */
+            display: flex;
+
+            /* 垂直居中 */
+            align-items: center;
+
+            /* 作用：拉伸（当子级的高度没有赋值，会自动拉伸高度）  */
+            /* 当父级没有给align-items值的时候，会自动给这个值（align-items: stretch;） */
+            /* align-items: stretch; */
+
+            height: 200.5px;
+            border: 1px solid #000;
+        }
+        .box div{
+            width: 100px;
+            /* height: 100px; */
+            background-color: pink;
+        }
+        .box div:nth-child(2){
+            /* 单独控制子级侧轴样式 */
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+    </div>
+</body>
+</html>
+<head>
+
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+body{
+    background-color: #f7f7f8;
+}
+.mian{
+    padding: 8px 12px 80px;
+}
+/* 用户信息块 */ 
+.user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px auto;
+	height: 85px;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+.user .left{
+    width: 30px;
+    height: 30px;
+    background-image: linear-gradient(90deg, 
+		#6fc2aa 5%, 
+		#54b196 100%);
+    margin-right: 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+}
+.user .middle{
+    flex: 1;
+
+}
+.user .middle h5{
+    width: 165px;
+	height: 14px;
+	font-size: 15px;
+	color: #262626;
+}
+.user .middle span{
+    display: inline-block;
+    width: 52px;
+    height: 14px;
+}
+.user .middle p{
+    margin-top: 10px;
+	width: 260px;
+	height: 30px;
+	font-size: 12px;
+	line-height: 18px;
+	color: #333333;
+}
+.user .right{
+	width: 44px;
+	height: 44px;
+    text-align: center;
+    line-height: 44px;
+}
+
+/* 商品模块 */
+.goods{
+	height: 107px;
+	background-color: #ffffff;
+	border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+.goods .left{
+    margin-left: 10px;
+    width: 88px;
+    margin-right: 10px;
+}
+.goods .middle{
+    flex: 1;
+}
+.goods .middle h3{
+    width: 192px;
+	height: 32px;
+	font-size: 13px;
+	line-height: 19px;
+	color: #262626;
+}
+.goods .middle h4{
+    width: 88px;
+	height: 11px;
+	font-size: 11px;
+	color: #888888;
+    margin: 5px 0;
+}
+.goods .middle h5{
+	width: 26px;
+	height: 12px;
+	font-size: 16px;
+	line-height: 21px;
+	color: #cf4444;
+    font-size: 9px;
+}
+.goods .middle h5 span{
+	font-size: 16px;
+	line-height: 21px;
+	color: #cf4444;
+    margin-right: 8px;
+}
+.goods .middle h5 i{
+	width: 26px;
+	height: 10px;
+	font-size: 12px;
+	line-height: 21px;
+	color: #999999;
+    text-decoration:line-through;
+}
+.goods .right i{
+    margin-right: 17px;
+}
+
+.goods .right span{
+    width: 7px;
+	height: 7px;    
+}
+.goods .right i{
+    margin-right: 17px;
+}
+
+/* 其他模块 */
+.else{
+    margin-top: 6px;
+	height: 125px;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+.else div{
+    display: flex;
+    margin: 0 25px 20px 15px;
+	font-size: 13px;
+	line-height: 21px;
+	color: #262626;
+}
+.else .up{
+    padding-top: 14px;
+}
+.else div:nth-child(3){
+    margin-bottom: 0;
+}
+.else div:nth-child(2n+1){
+    /* 间距在弹性盒子之间 */
+    justify-content: space-between;
+}
+.else .middle h4{
+    margin-left: 20px;
+	font-size: 12px;
+	line-height: 21px;
+	color: #989898;
+}
+.else .below h5 span{
+    margin-left: 8px;
+}
+
+/* 商品总价 */
+.count  {
+    margin-top: 6px;
+	height: 125px;
+	background-color: #ffffff;
+	border-radius: 5px;
+}
+.count div{
+    display: flex;
+    margin: 0 25px 20px 15px;
+	font-size: 13px;
+	line-height: 21px;
+	color: #262626;
+    justify-content: space-between;
+}
+.count div:nth-child(1){
+    padding-top: 14px;
+}
+
+/* 支付块 */
+.pay{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+	height: 79px;
+	background-color: #ffffff;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:  0 12px;
+    text-align: center;
+}
+.pay .left{
+    font-size: 11px;
+    color: #1e1e1e;
+}
+.pay .left .red{
+    color: #cf4444;
+}
+.pay .left .i{
+    font-size: 20px;
+}
+.pay .right{
+    width: 91px;
+	height: 35px;
+    line-height: 35px;
+	background-image: linear-gradient(90deg, 
+		#6fc2aa 5%, 
+		#54b196 100%);
+	border-radius: 3px;
+}

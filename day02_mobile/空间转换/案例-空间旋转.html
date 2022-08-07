@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>透视效果</title>
+    <style>
+
+        .box {
+            perspective: 1000px;
+            width: 200px;
+            height: 150px;
+            margin: 100px auto;
+            background-image: linear-gradient(
+                transparent,
+                rgba(0,0,0,0.6)
+            );
+            transition: all 2s;
+        }
+        .box img{
+            width: 200px;
+            height: 150px;
+        }
+
+        .box:hover{
+            transform: rotateY(360deg);
+        }
+    </style>
+</head>
+
+<body>
+<div class="box"><img src="images/hero.jpeg"></div>
+</body>
+
+</html>

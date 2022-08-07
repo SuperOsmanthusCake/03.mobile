@@ -1,0 +1,89 @@
+/*将全局的内外边距改为0*/
+*{
+    margin: 0;
+    padding: 0;
+}
+/*修改默认的列标*/
+li{
+    list-style: none;
+}
+/*修改超链接的默认颜色和下划线*/
+a{
+    color: #fff;
+    text-decoration: none;
+}
+/*定义一个大的盒子，用于放一些组件，主要是方便排版*/
+.box{
+    margin: 50px auto;
+    width: 1110px;
+    height: 247px;
+}
+/*用列表的方式储存放这三个图*/
+.box li {
+    position: relative;
+    float: left;
+    margin-right: 30px;
+}
+/*第三个的右外边距改为0*/
+.box li:nth-child(3){
+    margin-right: 0;
+}
+/*修改图片的大小*/
+.box li img{
+    width: 350px;
+    height: 247px;
+}
+/*定义一个容器用来放这些字，并将这些字的位置用定位的方式将位置排列好*/
+.box .tex{
+    position: absolute;
+    left: 0;
+    top: 116px;
+    width: 290px;
+    height: 141px;
+    padding: 20px 30px;
+    transition: all 0.5s;
+}
+/*当鼠标移动到这个li上时文字的位置改变*/
+.box li:hover .tex{
+    position: absolute;
+    left: 0;
+    top: 60px;
+}
+/*设置字体样式*/
+.box .tex h4{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 2em;
+}
+/*设置字体样式*/
+.box .tex h5{
+    font-size: 18px;
+    line-height: 1.5em;
+    width: 290px;
+    margin-bottom: 40px;
+}
+/*设置字体样式*/
+.box .tex p{
+    font-size: 14px;
+}
+/*实现透明渐变，并定好位置*/
+.box .mack{
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 350px;
+    height: 247px;
+    background-image: linear-gradient(
+            transparent,
+            rgba(0,0,0,.6)
+    );
+    /*透明度0*/
+    opacity: 0;
+    transition: all .5s;
+}
+/*透明度1*/
+.box li:hover .mack{
+    opacity: 1;
+}
+

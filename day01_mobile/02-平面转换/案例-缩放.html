@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>缩放</title>
+    <style>
+        .box{
+            position: relative;
+            margin: 100px auto;
+            background-color: pink;
+            width: 768px;
+            height: 542px;
+            /*溢出部分隐藏*/
+            overflow: hidden;
+        }
+        .box::after{
+            /*实现伪类*/
+            content: "";
+            /*左浮动*/
+            float: left;
+
+            width: 768px;
+            height: 542px;
+            background-image: url("./images/product.jpeg");
+            /*平面转换实现属性和执行时间*/
+            transition: all .5S;
+        }
+        .box:hover::after{
+            /*放大1.2倍*/
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动画-animation</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            /*animation: 动画名称 动画时长 速度曲线 延迟时间 重复次数 动画方向 执行完毕时状态;*/
+/*              animation-name
+                animation-duration
+                animation-delay     steps分步动画 linear匀速动画
+                animation-iteration-count    infinite无限重复
+                animation-direction     alternate反向
+                animation-timing-function forwards停留最终状态
+                animation-fill-mode*/
+            animation: change 2s steps(5) 1s  forwards ;
+        }
+        @keyframes change {
+            from{
+                width: 100px;
+            }
+            to{
+                width: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

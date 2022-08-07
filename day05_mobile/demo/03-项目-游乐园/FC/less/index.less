@@ -1,0 +1,106 @@
+// out: ../css/
+// 导入less文件
+@import "./base.less";
+@import "./normalize.less";
+
+// 定义变量：
+@rootSize: 37.5rem;
+
+body{
+    background-color: #F0F0F0;
+}
+.main{
+    margin-bottom: (60 / @rootSize);   
+    .banner{
+        width: 100%;
+        height: (160 / @rootSize);
+        img{
+            width: 100%;
+        }
+    }
+    .title{
+        width: 100%;
+        height: (40 / @rootSize);
+        line-height: (40 / @rootSize);
+        color: #3C3C3C;
+        font-size: (14 / @rootSize);
+        margin-left: (14 / @rootSize);
+    }
+    .item{
+        width: 100%;
+        margin-bottom: (10 /@rootSize);
+        background-color: #fff;
+        img{
+            width: 100%;
+        }
+        .txt{
+            display: flex;
+            justify-content: space-around;
+            line-height: (21 / @rootSize);
+            .left{
+                margin-top: (4 / @rootSize);
+                width: (289 / @rootSize);
+                color: #3C3C3C;
+                font-size: (15 / @rootSize);
+                
+            }
+            .right{
+                margin-top: (8 / @rootSize);
+                width: (30 / @rootSize);
+                font-size: (15 / @rootSize);
+                color: #FE6249;
+            }
+        }
+        .tip{
+            width: 100%;
+            height: (13 / @rootSize);
+            font-size: (13 / @rootSize);
+            color: #B4B4B4;
+            margin-top: (10 / @rootSize);
+            padding-bottom: (10 / @rootSize);
+            .left{
+                float: left;
+                margin-left: (15 / @rootSize);
+                i{
+                    font-size: (13 / @rootSize);
+                }
+            }
+            .right{
+                float: left;
+                i{
+                    margin-left: (16 / @rootSize);
+                    font-size: (13 / @rootSize);
+                }
+            } 
+        }
+    }
+}
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+
+    height: (50 / @rootSize);
+    width: 100%;
+    background-color: yellow;
+
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    a{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #D78B09;
+        i{
+            // 因为iconfont类选择器优先级较大，因此加上！
+            font-size: (22 / @rootSize) !important;
+        }
+        p{
+            font-size: (11 / @rootSize);
+        }
+
+    }
+        
+}

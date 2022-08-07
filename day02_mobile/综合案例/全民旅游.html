@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全民旅游</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+            height: 100%;
+        }
+        body{
+            position: relative;
+            background: url("./images/f1_1.jpg") no-repeat center 0;
+            background-size: cover;
+            height: 100%;
+        }
+        .yun1{
+            top: 50px;
+            left: 500px;
+            animation: yun1 4s infinite linear alternate;
+            background-image: url("./images/yun1.png");
+            width: 66px;
+            height: 41px;
+        }
+        .yun2{
+            top: 50px;
+            left: 750px;
+            animation: yun2 2s infinite linear alternate;
+            background-image: url("./images/yun2.png");
+            width: 85px;
+            height: 48px;
+        }
+        .yun3{
+            top: 150px;
+            left: 1200px;
+            animation: yun3 3s infinite linear alternate;
+            background-image: url("./images/yun3.png");
+            width: 126px;
+            height: 72px;
+        }
+        .lu{
+            top: 350px;
+            left: 600px;
+            animation: lu 3s infinite linear alternate;
+            background-image: url("./images/lu.png");
+            width: 204px;
+            height: 200px;
+            transform-origin: left bottom;
+        }
+        .yun1,.yun2,.yun3,.lu{
+            position: absolute;
+        }
+        @keyframes yun1 {
+            to{
+                left: 550px;
+            }
+        }
+        @keyframes yun2 {
+            to{
+                left: 850px;
+            }
+        }
+        @keyframes yun3 {
+            to{
+                left: 1250px;
+            }
+        }
+        @keyframes lu {
+            to{
+                transform: rotateZ(10deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="yun1"></div>
+    <div class="yun2"></div>
+    <div class="yun3"></div>
+    <div class="lu"></div>
+</body>
+</html>

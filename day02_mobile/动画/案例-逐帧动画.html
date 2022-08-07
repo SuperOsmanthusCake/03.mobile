@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>逐帧动画</title>
+    <style>
+        body{
+            position: relative;
+        }
+        .box{
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            width: 140px;
+            height: 140px;
+            background-image: url("./images/bg.png");
+            animation:
+                    change 1s steps(12) infinite,
+                    pao 3s forwards;
+        }
+        @keyframes change {
+            from{
+
+            }
+            to{
+                background-position: -1680px 0;
+            }
+        }
+        @keyframes pao {
+            to{
+                left: 500px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+    </div>
+</body>
+</html>
